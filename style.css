@@ -1,0 +1,266 @@
+header {
+  background: linear-gradient(90deg, #000, #333, #666, #999, #ccc);
+  border: none;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}/* Add color to header and footer */
+
+/* Add some padding and adjust margins for header and footer */
+header, footer {
+  padding: 10px;
+  margin: 0;
+}
+
+/* Add hover effect to navigation links */
+nav ul li a:hover {
+  background: linear-gradient(90deg, #660000, #990000, #ff0000, #ff3300, #ff6600, #ff9900, #ffcc00, #ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add some movement to the logo */
+header img.circular {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%; /* Make the image circular */
+  margin-top: 10px; /* Adjust top margin to fit underneath title */
+}
+
+header img.circular:hover {
+  transform: scale(1.1);
+}
+
+/* Style the main content area */
+main { background-color: linear-gradient(90deg, #000, #333, #666, #999, #ccc)
+  
+}
+
+/* Style the navigation menu */
+nav {
+  background: linear-gradient(90deg, #660000, #990000, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff0000; /* Red text */
+}
+
+/* Style the footer content */
+footer {
+  text-align: center;
+  margin: 10px; /* Add margin */
+}
+
+/* Add some space between footer content */
+footer p {
+  margin-bottom: 10px;
+}
+
+/* Add a subtle border to footer content */
+footer {
+  border-top: 1px solid #ccc;
+}
+
+/* Ombré effect for title and headers */
+h1, h2, h3 {
+  background: linear-gradient(90deg, #FF0000, #CC0000, #990000, #660000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.photo-slots {
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 0;
+}
+
+.photo-slots img {
+   max-width: 30%;
+   height: auto;
+   border-radius: 8px;
+}
+
+main {
+   color: white; /* Set the default color to white */
+}
+
+main h2,
+main h3,
+main ul,
+main li {
+   color: grey; /* Set headings and list items to grey */
+}
+
+body {
+  background-color: #666; /* Grey background color */
+}
+
+/* Add color to header and footer */
+header, footer {
+  background-color: #000; /* Black color */
+  color: #ff0000; /* Red text */
+}
+
+/* ... (rest of your CSS code) ... */
+
+body {
+  background: linear-gradient(to bottom, #666, #000); /* Blend from grey (#666) to black (#000) */
+}
+
+/* Add color to header and footer */
+header, footer {
+  background: linear-gradient(to bottom, #333, #000); /* Blend from darker grey (#333) to black (#000) */
+  color: #ff0000; /* Red text */
+}
+
+/* ... (rest of your CSS code) ... */
+
+.photo-slots {
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 0;
+   position: relative; /* Set position relative to allow absolute positioning of overlay */
+}
+
+.photo-slots img {
+   max-width: 30%;
+   height: auto;
+   border-radius: 8px;
+   position: relative; /* Set position relative for absolute positioning of overlay */
+   z-index: 1; /* Ensure images are in front of overlay */
+}
+
+.photo-slots img::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 1, 1, 1); /* Semi-transparent black overlay */
+   z-index: 2; /* Position overlay above image */
+   border-radius: 8px; /* Match image border radius */
+}
+
+header {
+  background: none; /* Remove border */
+  padding: 5px; /* Add padding to soften the edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the main content area */
+main {
+  background: linear-gradient(90deg, #000, #333, #666, #999, #ccc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+body {
+  background-color: #000; /* Black background color for the page */
+}
+
+header {
+  background: linear-gradient(90deg, #000, #333, #666, #999, #ccc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Navigation bar animation */
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red; /* Change the color to the desired hover effect */
+}
+
+/* Photo animation */
+.photo-slots img {
+    transition: transform 0.3s ease;
+}
+
+.photo-slots img:hover {
+    transform: scale(1.1); /* Increase the size on hover, adjust as needed */
+}
+
+/* Add this CSS to your style.css file */
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black; /* Set the color of the links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+nav ul li a:hover {
+    color: red; /* Change the color on hover */
+}
+
+
+/* Add this CSS to your style.css file */
+
+@keyframes floatInWater {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+.circular {
+    animation: floatInWater 2s infinite;
+}
+
+/* Add this CSS to your style.css file */
+
+.circular {
+    background-color: transparent; /* Set the background color to transparent */
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Increased duration to 1 second */
+}
